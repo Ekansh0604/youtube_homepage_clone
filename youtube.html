@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="Styles/general.css" />
+    <link rel="stylesheet" href="Styles/video.css" />
+    <link rel="stylesheet" href="Styles/header.css" />
+    <link rel="stylesheet" href="Styles/sidebar.css" />
+    <link rel="stylesheet" href="Styles/chips-components.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <div class="menu-icon-container">
+          <img class="hamburger-menu" src="Icons/hamburger-menu.svg" alt="#" />
+        </div>
+        <img class="youtube-logo" src="Icons/youtube-logo.svg" alt="#" />
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="search" placeholder="Search" />
+        <button class="search-button">
+          <img class="search-icon" src="Icons/search.svg" alt="#" />
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="Icons/voice-search-icon.svg" alt="" />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="Icons/upload.svg" alt="#" />
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-app-icon-container">
+          <img class="youtube-app-icon" src="Icons/youtube-apps.svg" alt="#" />
+          <div class="tooltip">YouTube Apps</div>
+        </div>
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="Icons/notifications.svg" alt="#" />
+          <div class="notifications-count">3</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+        <div class="my-channel-container">
+          <img class="my-channel" src="Profile/my-channel.svg" alt="#" />
+          <div class="tooltip">Profile</div>
+        </div>
+      </div>
+    </header>
+    <div class="tag-container">
+      <div class="tag-bar">
+        <button class="tag active">All</button>
+        <button class="tag">Music</button>
+        <button class="tag">Sai Abhyankkar</button>
+        <button class="tag">Anirudh Ravichandran</button>
+        <button class="tag">Shreya Ghoshal</button>
+        <button class="tag">Movies</button>
+        <button class="tag">Data Structures</button>
+        <button class="tag">JavaScript</button>
+        <button class="tag">Chai or Code</button>
+        <button class="tag">APIs</button>
+        <button class="tag">Gaming</button>
+        <button class="tag">007 First Light</button>
+      </div>
+    </div>
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img class="home-icon" src="Icons/home.svg" alt="" />
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img class="explore-icon" src="Icons/explore.svg" alt="" />
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img class="subscriptions-icon" src="Icons/subscriptions.svg" alt="" />
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img class="originals-icon" src="Icons/originals.svg" alt="" />
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img class="youtube-music-icon" src="Icons/youtube-music.svg" alt="" />
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img class="library-icon" src="Icons/library.svg" alt="" />
+        <div>Library</div>
+      </div>
+    </nav>
+    <main>
+      <div class="video-grid">
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=UbiYbqKaxVU" target="_blank" class="video-link">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-1.webp" alt="#" />
+              <div class="video-time">3:53</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@DarshanRavalDZ" target="_blank" class="channel-link">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/darshan_raval_DZ.jpeg" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=UbiYbqKaxVU" class="video-title-link" target="_blank">
+                <p class="video-title">Haara Official Lyrical Video | Darshan Raval | Basharat A | Mir D | Naushad Khan | Indie Music</p>
+              </a>
+              <a href="https://www.youtube.com/@DarshanRavalDZ" target="_blank" class="channel-link">
+                <p class="video-author">DarshanRavalDZ</p>
+              </a>
+              <p class="video-stats">2.2M views &#183; 8 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=pyZI5oM6hWk" class="video-link" target="_blank">            
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-3.webp" alt="Something" />
+              <div class="video-time">2:39</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@AmazonMGMStudios" class="channel-link" target="_blank">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/amazon_MGM_studios.jpeg" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=pyZI5oM6hWk" class="video-title-link" target="_blank">
+                <p class="video-title">
+                  The Sheep Detectives | Official Trailer
+                </p>
+              </a>
+              <a href="https://www.youtube.com/@AmazonMGMStudios" class="channel-link" target="_blank">
+                <p class="video-author">Amazon MGM Studios</p>
+              </a>
+              <p class="video-stats">23M views &#183; 6 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=QxWoYkrgpJE" target="_blank" class="video-link">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-2.webp" alt="#" />
+              <div class="video-time">4:01</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@thinkmusicofficial" target="_blank" class="channel-link">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/think_music.jpeg" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=QxWoYkrgpJE" target="_blank" class="video-title-link">
+                <p class="video-title">Nallaru Po | Dude | Pradeep Ranganathan | @SaiAbhyankkar | Tippu | Mohit Chauhan | Keerthiswaran</p>
+              </a>
+              <a href="https://www.youtube.com/@thinkmusicofficial" target="_blank" class="channel-link">
+                <p class="video-author">Think Music India</p>
+              </a>
+              <p class="video-stats">30M views &#183; 8 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=GoAAlACyXBg" class="video-link" target="_blank">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-4.webp" alt="#" />
+              <div class="video-time">1:45</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@SaiAbhyankkar" class="channel-link" target="_blank">              
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/sai_abhyankkar.jpeg" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=GoAAlACyXBg" class="video-title-link" target="_blank">
+                <p class="video-title">
+                  The Wild Theme (From "OM Chapter 1: Udhiram - The Blood Wood")
+                </p>
+              </a>
+              <a href="https://www.youtube.com/@SaiAbhyankkar" class="channel-link" target="_blank">
+                <p class="video-author">Sai Abhyankkar</p>
+              </a>
+              <p class="video-stats">3.2M views &#183; 3 weeks ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=86CQq3pKSUw" class="video-link" target="_blank">            
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-5.webp" alt="#" />
+              <div class="video-time">11:17</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@CSDojo" class="channel-link" target="_blank">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/CS_Dojo.jpeg" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=86CQq3pKSUw" class="video-title-link" target="_blank">                
+                <p class="video-title">
+                  Kadane's Algorithm to Maximum Sum Subarray Problem
+                </p>
+              </a>
+              <a href="https://www.youtube.com/@CSDojo" class="channel-link" target="_blank">
+                <p class="video-author">CS Dojo</p>
+              </a>
+              <p class="video-stats">519K views &#183; 5 years ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=RcWk08PBe7k" class="video-link" target="_blank">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-11.webp" alt="#" />
+              <div class="video-time">1:00</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@PlayStation" class="channel-link" target="_blank">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/play_station.jpeg" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=RcWk08PBe7k" class="video-title-link" target="_blank">
+                <p class="video-title">Ghost of Tsushima - A Storm is Coming Trailer | PS4</p>
+              </a>
+              <a href="https://www.youtube.com/@PlayStation" class="channel-link" target="_blank">
+                <p class="video-author">PlayStation</p>
+              </a>
+              <p class="video-stats">2.8M views &#183; 6 years ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=x5jfluo1_Yc" class="video-link" target="_blank">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-7.webp" alt="#" />
+              <div class="video-time">3:44</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@vanshhmusic1" class="channel-link" target="_blank">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/vanshh.jpeg" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=x5jfluo1_Yc" class="video-title-link" target="_blank">
+                <p class="video-title">Reha - Vanshh (Official Lyric Visualizer)</p>
+              </a>
+              <a href="https://www.youtube.com/@vanshhmusic1" class="channel-link" target="_blank">
+                <p class="video-author">Vanshh</p>
+              </a>
+              <p class="video-stats">647K views &#183; 1 month ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=M3_pLsDdeuU" class="video-link" target="_blank">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-6.webp" alt="#" />
+              <div class="video-time">13:42</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@takeUforward" class="channel-link" target="_blank">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/take_U_forward.jpeg" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=M3_pLsDdeuU" class="video-title-link" target="_blank">
+                <p class="video-title">
+                  G-1. Introduction to Graph | Types | Different Conventions Used
+                </p>
+              </a>
+              <a href="https://www.youtube.com/@takeUforward" class="channel-link" target="_blank">
+                <p class="video-author">take U forward</p>
+              </a>
+              <p class="video-stats">1.9M views &#183; 3 year ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=bmXVRqvZoE8" class="video-link" target="_blank">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-8.webp" alt="#" />
+              <div class="video-time">1:14:38</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@TaarakMehtaKaOoltahChashmah" class="channel-link" target="_blank">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/tmkoc.jpeg" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=bmXVRqvZoE8" class="video-title-link" target="_blank">
+                <p class="video-title">Water Shortage At Gokuldham! | FULL MOVIE | Fan Favourite | Part 2 | Taarak Mehta Ka Ooltah Chashmah</p>
+              </a>
+              <a href="https://www.youtube.com/@TaarakMehtaKaOoltahChashmah" class="channel-link" target="_blank">
+                <p class="video-author">Taarak Mehta Ka Ooltah Chashmah</p>
+              </a>
+              <p class="video-stats">22M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=EFmxPMdBqmU" class="video-link" target="_blank">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-9.webp" alt="#" />
+              <div class="video-time">9:26</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@alanbecker" class="channel-link" target="_blank">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/alan_becker.jpeg" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=EFmxPMdBqmU" class="video-title-link" target="_blank">
+                <p class="video-title">Animation vs. Coding</p>
+              </a>
+              <a href="https://www.youtube.com/@alanbecker" class="channel-link" target="_blank">
+                <p class="video-author">Alan Becker</p>
+              </a>
+              <p class="video-stats">21M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=62bIsvRcPv0" class="video-link" target="_blank">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-10.webp" alt="#" />
+              <div class="video-time">2:41</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@sonypictures" class="channel-link" target="_blank">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/sony_pictures.jpeg" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=62bIsvRcPv0" class="video-title-link" target="_blank">
+                <p class="video-title">SPIDER-MAN: BRAND NEW DAY - New Trailer (4K)</p>
+              </a>
+              <a href="https://www.youtube.com/@sonypictures" class="channel-link" target="_blank">
+                <p class="video-author">Sony Pictures Entertaiment</p>
+              </a>
+              <p class="video-stats">32M views &#183; 3 weeks ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=PVBLJYjSAhg" class="video-link" target="_blank">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-12.webp" alt="#" />
+              <div class="video-time">3:00</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@PlayStation" class="channel-link" target="_blank">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/play_station.jpeg" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=PVBLJYjSAhg" class="video-title-link" target="_blank">
+                <p class="video-title">
+                  Ghost of Yōtei - The Onryō's List | PS5 Games
+                </p>
+              </a>
+              <a href="https://www.youtube.com/@PlayStation" class="channel-link" target="_blank">
+                <p class="video-author">PlayStation</p>
+              </a>
+              <p class="video-stats">2.4M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=ZF6t-XGdkRQ" class="video-link" target="_blank">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-29.webp" alt="#" />
+              <div class="video-time">5:22</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@TVFMusic" class="channel-link" target="_blank">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/tvf_music.webp" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=ZF6t-XGdkRQ" class="video-title-link" target="_blank">
+                <p class="video-title">Hind Ke Sitara | Official Music Video | Panchayat S3 | Manoj Tiwari, Gayatri Thakur Vyas, Anurag S</p>
+              </a>
+              <a href="https://www.youtube.com/@TVFMusic" class="channel-link" target="_blank">
+                <p class="video-author">TVF Music</p>
+              </a>
+              <p class="video-stats">41M views &#183; 2 years ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=J4qY9DYE184" class="video-link" target="_blank">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-13.webp" alt="#" />
+              <div class="video-time">3:13</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@PlayStation" class="channel-link" target="_blank">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/play_station.jpeg" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=J4qY9DYE184" class="video-title-link" target="_blank">
+                <p class="video-title">007 First Light - Announcement Trailer | PS5 Games</p>
+              </a>
+              <a href="https://www.youtube.com/@PlayStation" class="channel-link" target="_blank">
+                <p class="video-author">PlayStation</p>
+              </a>
+              <p class="video-stats">5.5M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=M7V4LCmBRqg" class="video-link" target="_blank">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-15.webp" alt="#" />
+              <div class="video-time">55:06</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@TaarakMehtaKaOoltahChashmah" class="channel-link" target="_blank">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/tmkoc.jpeg" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=M7V4LCmBRqg" class="video-title-link" target="_blank">
+                <p class="video-title">Jethalal ko Laga Shock! | FULL MOVIE | Part 1 | Taarak Mehta Ka Ooltah Chashmah Ep 881 to 883</p>
+              </a>
+              <a href="https://www.youtube.com/@TaarakMehtaKaOoltahChashmah" class="channel-link" target="_blank">
+                <p class="video-author">Taarak Mehta Ka Ooltah Chashmah</p>
+              </a>
+              <p class="video-stats">19M views &#183; 2 years ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=1B0O82Imde4" class="video-link" target="_blank">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-16.webp" alt="#" />
+              <div class="video-time">1:02:31</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@TaarakMehtaKaOoltahChashmah" class="channel-link" target="_blank">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/tmkoc.jpeg" alt="#" />
+              </div>
+            </a>            
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=1B0O82Imde4" class="video-title-link" target="_blank">
+                <p class="video-title">Three Trucks in Gokuldham! | FULL MOVIE | Part 1 | Taarak Mehta Ka Ooltah Chashmah</p>
+              </a>
+              <a href="https://www.youtube.com/@TaarakMehtaKaOoltahChashmah" class="channel-link" target="_blank">
+                <p class="video-author">Taarak Mehta Ka Ooltah Chashmah</p>
+              </a>
+              <p class="video-stats">40M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=uErMts4r-Gc" class="video-link" target="_blank">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-17.webp" alt="Something" />
+              <div class="video-time">1:32</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@SonyMusicIndia" class="channel-link" target="_blank">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/sony_music.webp" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=uErMts4r-Gc" class="video-title-link" target="_blank">
+                <p class="video-title">Maafi | Music Video | Pritam and Pedro | Shreya Ghoshal, Swanand Kirkire, Shantanu Moitra</p>
+              </a>
+              <a href="https://www.youtube.com/@SonyMusicIndia" class="channel-link" target="_blank">
+                <p class="video-author">Sony Music India</p>
+              </a>
+              <p class="video-stats">128K views &#183; 2 days ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=IRxYAvO8uwo" class="video-link" target="_blank">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-18.webp" alt="#" />
+              <div class="video-time">0:30</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@JioHotstar" class="channel-link" target="_blank">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/jio_hotstar.webp" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=IRxYAvO8uwo" class="video-title-link" target="_blank">
+                <p class="video-title">Hotstar Specials: Pritam and Pedro | Rajukumar Hirani | July 3rd | JioHotstar</p>
+              </a>
+              <a href="https://www.youtube.com/@JioHotstar" class="channel-link" target="_blank">
+                <p class="video-author">JioHotstar</p>
+              </a>
+              <p class="video-stats">16M views &#183; 1 month ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=y1Rx-Bbht5E" class="video-link" target="_blank">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-14.webp" alt="#" />
+              <div class="video-time">2:19</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@PlayStation" class="channel-link" target="_blank">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/play_station.jpeg" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=y1Rx-Bbht5E" class="video-title-link" target="_blank">
+                <p class="video-title">Uncharted 4: A Thief's End E3 2014 Trailer (PS4)</p>
+              </a>
+              <a href="https://www.youtube.com/@PlayStation" class="channel-link" target="_blank">
+                <p class="video-author">PlayStation</p>
+              </a>
+              <p class="video-stats">12M views &#183; 12 years ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=b68HETiNO98" class="video-link" target="_blank">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-19.webp" alt="#" />
+              <div class="video-time">5:09</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@thinkmusicofficial" class="channel-link" target="_blank">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/think_music.jpeg" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=b68HETiNO98" class="video-title-link" target="_blank">
+                <p class="video-title">@SaiAbhyankkar - Pavazha Malli (Music Video) | Kayadu | Shruti Haasan | Vivek | Thejo | Think Indie</p>
+              </a>
+              <a href="https://www.youtube.com/@thinkmusicofficial" class="channel-link" target="_blank">
+                <p class="video-author">Think Music India</p>
+              </a>
+              <p class="video-stats">249M views &#183; 4 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=qbvAmlKhWQQ" class="video-link" target="_blank">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-20.webp" alt="#" />
+              <div class="video-time">3:02</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@adityarikhari" class="channel-link" target="_blank">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/aditya_rikhari.webp" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=qbvAmlKhWQQ" class="video-title-link" target="_blank">
+                <p class="video-title">Aditya Rikhari - Raatein Guzaari</p>
+              </a>
+              <a href="https://www.youtube.com/@adityarikhari" class="channel-link" target="_blank">
+                <p class="video-author">Aditya Rikhari</p>
+              </a>
+              <p class="video-stats">4.4M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=LdezlX84py0" class="video-link" target="_blank">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-22.webp" alt="#" />
+              <div class="video-time">1:35</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@netflixkcontent" class="channel-link" target="_blank">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/netflixKcontent.webp" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=LdezlX84py0" class="video-title-link" target="_blank">
+                <p class="video-title">Teach You a Lesson | Official Trailer | Netflix [ENG SUB]</p>
+              </a>
+              <a href="https://www.youtube.com/@netflixkcontent" class="channel-link" target="_blank">
+                <p class="video-author">Netflix K-Content</p>
+              </a>
+              <p class="video-stats">926K views &#183; 1 month ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=jxERsySZSe8" class="video-link" target="_blank">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-23.webp" alt="#" />
+              <div class="video-time">3:54</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@wemixoffline" class="channel-link" target="_blank">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/offline_mix.webp" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=jxERsySZSe8" class="video-title-link" target="_blank">
+                <p class="video-title">Soul of Raag (CHANAKYA Mashup) | Sunix Thakor & Sagar Swarup | Rishab Rikhiram Sharma</p>
+              </a>
+              <a href="https://www.youtube.com/@wemixoffline" class="channel-link" target="_blank">
+                <p class="video-author">Offline Mix</p>
+              </a>
+              <p class="video-stats">4.7M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=Avky8dVaqAI" class="video-link" target="_blank">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-25.webp" alt="#" />
+              <div class="video-time">2:07</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@LionsgateMovies" class="channel-link" target="_blank">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/lions_gate.webp" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=Avky8dVaqAI" class="video-title-link" target="_blank">
+                <p class="video-title">The Furious (2026) Official Trailer - Xie Miao, Joe Taslim</p>
+              </a>
+              <a href="https://www.youtube.com/@LionsgateMovies" class="channel-link" target="_blank">
+                <p class="video-author">Lionsgate Movies</p>
+              </a>
+              <p class="video-stats">9.3M views &#183; 3 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=beqprrnaKFc" class="video-link" target="_blank">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-26.webp" alt="#" />
+              <div class="video-time">3:46</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@indiemusiclabelofficial" class="channel-link" target="_blank">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/indie_music_label.webp" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=beqprrnaKFc" class="video-title-link" target="_blank">
+                <p class="video-title">Asal Mein - Darshan Raval | Official Video | Indie Music Label - Latest Hit song 2020</p>
+              </a>
+              <a href="https://www.youtube.com/@indiemusiclabelofficial" class="channel-link" target="_blank">
+                <p class="video-author">Indie Music Label</p>
+              </a>
+              <p class="video-stats">200M views &#183; 6 years ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=pWeIvQQV6Rg" class="video-link" target="_blank">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-27.webp" alt="#" />
+              <div class="video-time">2:29</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@WaltDisneyStudiosIndia" class="channel-link" target="_blank">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/walt_disney.webp" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=pWeIvQQV6Rg" class="video-title-link" target="_blank">
+                <p class="video-title">Hoppers | Official Hindi Trailer | In Theatres March 6</p>
+              </a>
+              <a href="https://www.youtube.com/@WaltDisneyStudiosIndia" class="channel-link" target="_blank">
+                <p class="video-author">Walt Disney Studios India</p>
+              </a>
+              <p class="video-stats">1.6M views &#183; 7 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=In4oh1O1198" class="video-link" target="_blank">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-24.webp" alt="#" />
+              <div class="video-time">6:39</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@wemixoffline" class="channel-link" target="_blank">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/offline_mix.webp" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=In4oh1O1198" class="video-title-link" target="_blank">
+                <p class="video-title">BLEND OF RAAG | Indian Classical Mashup Trilogy Finale | @sagarswarup x @SunixThakor</p>
+              </a>
+              <a href="https://www.youtube.com/@wemixoffline" class="channel-link" target="_blank">
+                <p class="video-author">Offline Mix</p>
+              </a>
+              <p class="video-stats">7.5M views &#183; 11 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=57ATmXx-uUk" class="video-link" target="_blank">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-28.webp" alt="#" />
+              <div class="video-time">3:34</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@TVFMusic" class="channel-link" target="_blank">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/tvf_music.webp" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=57ATmXx-uUk" class="video-title-link" target="_blank">
+                <p class="video-title">Aasman Rootha | Official Music Video | Panchayat Season 3 | Swanand Kirkire, Anurag Saikia, JUNO</p>
+              </a>
+              <a href="https://www.youtube.com/@TVFMusic" class="channel-link" target="_blank">
+                <p class="video-author">TVF Music</p>
+              </a>
+              <p class="video-stats">4.5M views &#183; 2 years ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=f2LlwPPmQBk" class="video-link" target="_blank">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-30.webp" alt="#" />
+              <div class="video-time">15:35</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@AngryBirds" class="channel-link" target="_blank">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/angry_birds.webp" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=f2LlwPPmQBk" class="video-title-link" target="_blank">
+                <p class="video-title">Angry Birds - Top 10 Game Trailers Compilation</p>
+              </a>
+              <a href="https://www.youtube.com/@AngryBirds" class="channel-link" target="_blank">
+                <p class="video-author">Angry Birds</p>
+              </a>
+              <p class="video-stats">15M views &#183; 7 years ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=Yd4tYw8fHEs" class="video-link" target="_blank">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-21.webp" alt="#" />
+              <div class="video-time">4:33</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <a href="https://www.youtube.com/@adityarikhari" class="channel-link" target="_blank">
+              <div class="channel-picture">
+                <img class="profile-picture" src="Profile/aditya_rikhari.webp" alt="#" />
+              </div>
+            </a>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=Yd4tYw8fHEs" class="video-title-link" target="_blank">
+                <p class="video-title">Suroor (Official Video) Aditya Rikhari x Rochak Kohli | Gurpreet Saini | Palak Kohli</p>
+              </a>
+              <a href="https://www.youtube.com/@adityarikhari" class="channel-link" target="_blank">
+                <p class="video-author">Aditya Rikhari</p>
+              </a>
+              <p class="video-stats">6.6M views &#183; 9 months ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const tags = document.querySelectorAll('.tag');
+
+      tags.forEach(function(tag) {
+        tag.addEventListener('click', function() {
+          document.querySelector('.tag.active')?.classList.remove('active');
+          tag.classList.add('active');
+        });
+      });
+    </script>
+  </body>
+
+</html>
